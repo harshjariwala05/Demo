@@ -18,15 +18,12 @@ const Header = () => {
 
     return (
         <>
-            {/* Main Header */}
             <div className="fixed top-0 left-0 w-full flex justify-center py-6 px-[10px] border-b border-black z-[50] bg-white">
                 <nav className="flex items-center w-full max-w-[1280px] gap-10">
-                    {/* Logo */}
                     <div className="text-black text-[32px] cursor-pointer font-bold font-[IntegralCF]">
                         SHOP.CO
                     </div>
 
-                    {/* Nav Items (visible ≥ 990px) */}
                     <ul className="hidden lg:flex list-none items-center gap-5 pl-10">
                         {navItems.map((item, index) => (
                             <li
@@ -43,7 +40,6 @@ const Header = () => {
                         ))}
                     </ul>
 
-                    {/* Search Bar (visible ≥ 990px) */}
                     <div className="hidden lg:flex rounded-[62px] bg-[#f0f0f0] py-3 px-4 gap-4 flex-1 max-w-[400px]">
                         <LuSearch />
                         <input
@@ -53,13 +49,11 @@ const Header = () => {
                         />
                     </div>
 
-                    {/* Icons (cart, profile) */}
                     <div className="flex gap-[14px] ml-auto">
                         <FiShoppingCart className="text-2xl" />
                         <CgProfile className="text-2xl" />
                     </div>
 
-                    {/* Menu Icon - Visible < 990px */}
                     <div
                         className="block lg:hidden text-3xl cursor-pointer ml-4"
                         onClick={() => setMenuOpen(true)}
@@ -69,12 +63,10 @@ const Header = () => {
                 </nav>
             </div>
 
-            {/* Slide-In Mobile Menu (visible < 990px) */}
             <div
                 className={`fixed top-0 right-0 w-full h-screen bg-[#f0f0f0] z-[999] p-6 flex flex-col transform transition-transform duration-300 ease-in-out ${menuOpen ? "translate-x-0" : "translate-x-full"
                     }`}
             >
-                {/* Close Icon */}
                 <div
                     className="text-3xl ml-auto cursor-pointer"
                     onClick={() => setMenuOpen(false)}
@@ -82,7 +74,6 @@ const Header = () => {
                     <IoMdClose />
                 </div>
 
-                {/* Nav Items */}
                 <ul className="mt-10 flex flex-col gap-6 text-lg font-[Satoshi] text-black">
                     {navItems.map((item, index) => (
                         <li key={index} className="cursor-pointer">

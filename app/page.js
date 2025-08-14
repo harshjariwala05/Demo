@@ -1,6 +1,5 @@
 import FirstOne from "../components/FirstOne";
 import Header from "../components/Header";
-// import Home from "../components/FirstOne";
 
 export default function Home() {
   return (

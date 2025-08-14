@@ -1,4 +1,3 @@
-/* Custom media query at 990px */
 @media (max-width: 990px) {
   .nav-items {
     display: none !important;
