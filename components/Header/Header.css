@@ -1,0 +1,14 @@
+/* Custom media query at 990px */
+@media (max-width: 990px) {
+  .nav-items {
+    display: none !important;
+  }
+
+  .search-bar {
+    display: none !important;
+  }
+
+  .menu-icon {
+    display: block !important;
+  }
+}
