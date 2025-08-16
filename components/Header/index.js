@@ -18,7 +18,7 @@ const Header = () => {
 
     return (
         <>
-            <div className="fixed top-0 left-0 w-full flex justify-center py-6 px-[10px] border-b border-black z-[50] bg-white">
+            <div className="fixed top-0 left-0 w-full flex justify-center py-5 px-[10px]  z-[50] bg-white">
                 <nav className="flex items-center w-full max-w-[1280px] gap-10">
                     <div className="text-black text-[32px] cursor-pointer font-bold font-[IntegralCF]">
                         SHOP.CO

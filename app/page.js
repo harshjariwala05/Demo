@@ -1,13 +1,21 @@
+import NewArrivals from "../components/NewArrivals";
 import FirstOne from "../components/FirstOne";
 import Header from "../components/Header";
+import TopSelling from "../components/TopSelling";
+import OurCustomers from "../components/OurCustomers";
+import AboutUs from "../components/AboutUs";
 
 export default function Home() {
   return (
-    <div className="h-screen">
+    <div>
       <Header />
-      <main className="border-2 border-black real">
+      <div className='' >
         <FirstOne />
-      </main>
-    </div>
+        <NewArrivals />
+        <TopSelling />
+        <OurCustomers />
+        <AboutUs />
+      </div>
+    </div >
   );
 }
